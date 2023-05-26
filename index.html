@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Section é um elemento para representar uma seção genérica-->
+    <!--Action é um atributo para definidar o local(uma URL) em que os dados
+    recolhidos do formulário devem ser enviados-->
+
+    <section class="container">
+        <h1>Calcule seu IMC</h1>
+        <form action="/" id="formulario" mathod="POST">
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" name="peso">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
